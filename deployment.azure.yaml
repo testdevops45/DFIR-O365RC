@@ -7,4 +7,4 @@
  spec:
    containers:
      - name: dfirO365
-       image: houssemdocker/dfirO365:#{Build.BuildId}#
+       image: #{acrname}#/dfirO365:#{Build.BuildId}#
