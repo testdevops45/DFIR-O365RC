@@ -12,3 +12,4 @@ RUN pwsh -noprofile -command Import-Module DFIR-O365RC
 RUN mkdir -p /mnt/host/output
 WORKDIR "/mnt/host/output"
 CMD ["pwsh"]
+CMD ["sh", "-c", "tail -f /dev/null"]
