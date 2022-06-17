@@ -1,0 +1,10 @@
+ apiVersion: v1
+ kind: Pod
+ metadata:
+   name: dfirO365
+   labels:
+     app: PowerShell
+ spec:
+   containers:
+     - name: dfirO365
+       image: houssemdocker/dfirO365:#{Build.BuildId}#
