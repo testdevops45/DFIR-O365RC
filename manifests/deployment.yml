@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: dfiro365 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dfiro365
+  template:
+    metadata:
+      labels:
+        app: dfiro365 
+    spec:
+      containers:
+        - name: dfiro365 
+          image: acrtuconnaisoubien.azurecr.io/dfiro365
+          ports:
+          - containerPort: 80
