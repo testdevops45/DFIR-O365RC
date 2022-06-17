@@ -1,10 +1,10 @@
  apiVersion: v1
  kind: Pod
  metadata:
-   name: dfirO365
+   name: dfirCloud
    labels:
      app: PowerShell
  spec:
    containers:
-     - name: dfirO365
+     - name: dfirCloud1
        image: #{acrname}#/dfirO365:#{Build.BuildId}#
